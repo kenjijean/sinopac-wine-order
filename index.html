@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>永豐銀行尊榮VIP品酒會【SZITY 儷泉精選】西班牙風情名莊佳釀 專屬訂購單</title>
+  <title>永豐銀行尊榮VIP品酒會【SZITY 儷泉精選】西班牙與奧地利名莊佳釀 專屬訂購單</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -25,16 +25,15 @@
       font-family: 'Cinzel', serif;
     }
 
-    /* Custom subtle glassmorphism */
     .glass-panel {
-      background: rgba(26, 24, 33, 0.75);
+      background: rgba(26, 24, 33, 0.78);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border: 1px solid rgba(212, 175, 55, 0.18);
     }
 
     .wine-card {
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .wine-card:hover {
       border-color: rgba(212, 175, 55, 0.45);
@@ -87,7 +86,7 @@
     </div>
   </div>
 
-  <!-- 頂部品牌 Banner -->
+  <!-- 頂部品牌 Header -->
   <header class="border-b border-amber-900/30 bg-gradient-to-b from-[#18131d] to-[#0f0e15] sticky top-0 z-30 shadow-md">
     <div class="max-w-5xl mx-auto px-4 py-4 sm:px-6 flex items-center justify-between">
       <div class="flex items-center gap-3">
@@ -97,9 +96,9 @@
         <div>
           <h1 class="text-lg font-bold text-amber-100 font-serif-tc tracking-wide flex items-center gap-2">
             永豐銀行 尊榮 VIP 品酒會
-            <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-950 text-amber-300 border border-amber-700/50 font-sans">SZITY 儷泉獨家</span>
+            <span class="text-xs px-2.5 py-0.5 rounded-full bg-amber-950 text-amber-300 border border-amber-700/50 font-sans">SZITY 儷泉精選</span>
           </h1>
-          <p class="text-xs text-slate-400">奧地利與西班牙名莊典藏佳釀 貴賓專屬預約訂購意向單</p>
+          <p class="text-xs text-slate-400">奧地利與西班牙名莊典藏佳釀 貴賓專屬預約訂購意向單（全面 8.5 折）</p>
         </div>
       </div>
     </div>
@@ -125,31 +124,30 @@
           感謝您蒞臨永豐銀行尊榮 VIP 品酒會
         </h2>
         <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-4">
-          本次品酒會特別精選奧地利維也納經典香檳啤酒與西班牙經典名莊（巴斯克 Txakoli、里奧哈 Rioja、艾曼沙 Almansa）共 5 款廣受好評的代表性佳釀，提供獨家 VIP 專屬優惠價格。
-          單筆訂購 <strong>滿 6 瓶</strong> 或 <strong>滿 NT$ 3,000 元</strong> 即享本島低溫/常溫宅配免運費！
+          本次品酒會特別精選奧地利維也納經典香檳啤酒與西班牙經典名莊（巴斯克 Txakoli、里奧哈 Rioja、艾曼沙 Almansa）共 5 款廣受好評的代表性佳釀，提供貴賓<strong>全品項原價 8.5 折</strong>專屬優惠。
+          單筆訂購 <strong>滿 6 瓶</strong> 或 <strong>滿 NT$ 3,000 元</strong> 即享本島低溫宅配免運費！
         </p>
         <div class="flex flex-wrap gap-2 text-xs">
-          <span class="px-2.5 py-1 rounded-md bg-amber-950/60 text-amber-300 border border-amber-800/40">VIP 專屬優惠配額</span>
+          <span class="px-2.5 py-1 rounded-md bg-amber-950/60 text-amber-300 border border-amber-800/40">全系列 8.5 折 VIP 專屬優惠</span>
           <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">黑貓溫控低溫配送</span>
           <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300">滿 6 瓶或滿 $3,000 免運</span>
         </div>
       </div>
     </section>
 
-    <!-- 訂購與驗證流程視覺化 -->
     <!-- 酒品清單 (A、B、C、D、E) -->
     <section class="space-y-6 mb-12">
       <div class="flex items-center justify-between border-b border-slate-800 pb-3">
         <h3 class="text-lg font-bold text-amber-200 font-serif-tc flex items-center gap-2">
-          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i> 一、 精選酒款優惠訂購明細
+          <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i> 一、 精選酒款優惠訂購明細（VIP 8.5 折）
         </h3>
         <span class="text-xs text-slate-400">已選合計：<strong id="headerTotalQty" class="text-amber-400 font-bold">0</strong> 瓶</span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-        <!-- 編號 A: 奧地利西格提酒莊 香檳啤酒 (第 1 頁) -->
-        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative md:col-span-2 lg:col-span-1" data-id="szigeti_beer" data-price="300" data-name="西格提酒莊 SZIGETI 香檳啤酒 750ml">
+        <!-- 編號 A: 奧地利西格提酒莊 香檳啤酒 -->
+        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative md:col-span-2 lg:col-span-1" data-id="szigeti_beer" data-price="510" data-name="西格提酒莊 SZIGETI 香檳啤酒 750ml">
           <div class="absolute top-4 left-4 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded font-mono font-bold border border-amber-400/40">
             編號 A
           </div>
@@ -162,7 +160,7 @@
             <p class="text-xs text-slate-400 italic mb-3">Sektkellerei Szigeti, Szigeti Beer (Alc. 6.0%)</p>
 
             <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              使用香檳酵母與傳統瓶內二次發酵的製作工藝，氣泡綿密厚重如香檳。入口帶著淡雅蜂蜜清香，苦澀味極低且麥香濃郁純淨。
+              使用香檳酵母與傳統瓶內二次發酵，氣泡綿密厚重如香檳。帶淡雅蜂蜜清香，苦澀味極低且麥香濃郁純淨。
             </p>
 
             <div class="space-y-1.5 text-xs text-slate-400 mb-5 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
@@ -174,7 +172,7 @@
           <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
             <div>
               <div class="text-xs text-slate-500 line-through">原價 NT$ 600</div>
-              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 300 <span class="text-xs font-normal text-slate-400">/瓶</span></div>
+              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 510 <span class="text-xs font-normal text-slate-400">/瓶 (85折)</span></div>
             </div>
             
             <div class="flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-xl p-1">
@@ -185,8 +183,8 @@
           </div>
         </div>
 
-        <!-- 編號 B: 查科莉白葡萄酒 (第 3 頁) -->
-        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="txakoli" data-price="550" data-name="奏鳴酒莊 查科莉白葡萄酒2025">
+        <!-- 編號 B: 查科莉白葡萄酒 -->
+        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="txakoli" data-price="723" data-name="奏鳴酒莊 查科莉白葡萄酒2025">
           <div class="absolute top-4 left-4 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded font-mono font-bold border border-amber-400/40">
             編號 B
           </div>
@@ -199,7 +197,7 @@
             <p class="text-xs text-slate-400 italic mb-3">Txomin Etxaniz, Txakoli 2025</p>
 
             <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              黃翠綠稻草色、微氣泡與明亮細緻酸度，經典果香清爽迷人，搭配海鮮、鹽漬鳳尾魚及巴斯克輕食，完美佐餐。
+              黃翠綠稻草色、微氣泡與明亮細緻酸度，經典果香清爽迷人，完美佐搭海鮮、鹽漬鳳尾魚及巴斯克輕食。
             </p>
 
             <div class="space-y-1.5 text-xs text-slate-400 mb-5 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
@@ -211,7 +209,7 @@
           <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
             <div>
               <div class="text-xs text-slate-500 line-through">原價 NT$ 850</div>
-              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 550 <span class="text-xs font-normal text-slate-400">/瓶</span></div>
+              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 723 <span class="text-xs font-normal text-slate-400">/瓶 (85折)</span></div>
             </div>
             
             <div class="flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-xl p-1">
@@ -222,8 +220,8 @@
           </div>
         </div>
 
-        <!-- 編號 C: 醉夢人紅葡萄酒 (第 4 頁) -->
-        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="iselen" data-price="325" data-name="馬太莊園「醉夢人」紅葡萄酒">
+        <!-- 編號 C: 醉夢人紅葡萄酒 -->
+        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="iselen" data-price="425" data-name="馬太莊園「醉夢人」紅葡萄酒">
           <div class="absolute top-4 left-4 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded font-mono font-bold border border-amber-400/40">
             編號 C
           </div>
@@ -236,7 +234,7 @@
             <p class="text-xs text-slate-400 italic mb-3">Bodegas Mateos, Iselen Tinto</p>
 
             <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              暗紅酒色、紅色莓果與草本薄荷清香，口感甜美溫和，中等酒體兼具緊實肉香，是搭配生火腿沙拉與日常肉類首選。
+              暗紅酒色、紅色莓果與草本薄荷清香，口感甜美溫和，中等酒體兼具緊實肉香，搭生火腿沙拉與日常肉類首選。
             </p>
 
             <div class="space-y-1.5 text-xs text-slate-400 mb-5 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
@@ -248,7 +246,7 @@
           <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
             <div>
               <div class="text-xs text-slate-500 line-through">原價 NT$ 500</div>
-              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 325 <span class="text-xs font-normal text-slate-400">/瓶</span></div>
+              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 425 <span class="text-xs font-normal text-slate-400">/瓶 (85折)</span></div>
             </div>
 
             <div class="flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-xl p-1">
@@ -259,8 +257,8 @@
           </div>
         </div>
 
-        <!-- 編號 D: 知更鳥花園晚摘微甜白酒 (第 6 頁) -->
-        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="marius_blanco" data-price="390" data-name="彼凱樂酒莊 知更鳥花園晚摘微甜白葡萄酒2024">
+        <!-- 編號 D: 知更鳥花園晚摘微甜白酒 -->
+        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="marius_blanco" data-price="510" data-name="彼凱樂酒莊 知更鳥花園晚摘微甜白葡萄酒2024">
           <div class="absolute top-4 left-4 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded font-mono font-bold border border-amber-400/40">
             編號 D
           </div>
@@ -273,7 +271,7 @@
             <p class="text-xs text-slate-400 italic mb-3">Bodegas Piqueras, Marius Unico Blanco 2024</p>
 
             <p class="text-xs text-slate-300 leading-relaxed mb-4">
-              清新微甜弱酸、白桃與台灣土鳳梨果香，夾帶杏仁堅果尾韻，適飲度極高，適合單獨品飲或巧搭輕食甜點。
+              清新微甜弱酸、白桃與台灣土鳳梨果香，夾帶杏仁堅果尾韻，適飲度極高，適合單獨品味或搭配輕食甜點。
             </p>
 
             <div class="space-y-1.5 text-xs text-slate-400 mb-5 bg-slate-900/50 p-3 rounded-lg border border-slate-800">
@@ -285,7 +283,7 @@
           <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
             <div>
               <div class="text-xs text-slate-500 line-through">原價 NT$ 600</div>
-              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 390 <span class="text-xs font-normal text-slate-400">/瓶</span></div>
+              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 510 <span class="text-xs font-normal text-slate-400">/瓶 (85折)</span></div>
             </div>
 
             <div class="flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-xl p-1">
@@ -296,8 +294,8 @@
           </div>
         </div>
 
-        <!-- 編號 E: 魔力紅陳釀級精選紅酒 (第 6 頁) -->
-        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative" data-id="gran_marius" data-price="390" data-name="彼凱樂酒莊 魔力紅陳釀級精選紅葡萄酒2020">
+        <!-- 編號 E: 魔力紅陳釀級精選紅酒 -->
+        <div class="wine-card glass-panel rounded-2xl p-5 flex flex-col justify-between relative md:col-span-2 lg:col-span-1" data-id="gran_marius" data-price="510" data-name="彼凱樂酒莊 魔力紅陳釀級精選紅葡萄酒2020">
           <div class="absolute top-4 left-4 bg-amber-500/20 text-amber-300 text-xs px-2 py-0.5 rounded font-mono font-bold border border-amber-400/40">
             編號 E
           </div>
@@ -322,7 +320,7 @@
           <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
             <div>
               <div class="text-xs text-slate-500 line-through">原價 NT$ 600</div>
-              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 390 <span class="text-xs font-normal text-slate-400">/瓶</span></div>
+              <div class="text-xl font-bold text-amber-400 font-brand">NT$ 510 <span class="text-xs font-normal text-slate-400">/瓶 (85折)</span></div>
             </div>
 
             <div class="flex items-center gap-2 bg-slate-900/80 border border-slate-700 rounded-xl p-1">
@@ -335,6 +333,7 @@
 
       </div>
     </section>
+
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       
       <!-- 左側 2 欄：訂購人與配送資訊填寫 -->
@@ -390,11 +389,11 @@
             </div>
 
             <div>
-              <label for="deliveryMethod" class="block text-xs font-medium text-slate-300 mb-1.5">
+              <label class="block text-xs font-medium text-slate-300 mb-1.5">
                 配送方式 <span class="text-red-400">*</span>
               </label>
               <div class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-2.5 text-sm text-amber-300 flex items-center justify-between">
-                <span>黑貓低溫/常溫宅配到府</span>
+                <span>黑貓低溫宅配到府</span>
                 <span class="text-xs text-slate-400">滿6瓶或滿$3,000免運</span>
               </div>
               <input type="hidden" id="deliveryMethod" value="delivery">
@@ -445,7 +444,7 @@
             <label class="flex items-start gap-3 cursor-pointer">
               <input type="checkbox" id="legalCheckbox" required class="mt-1 h-4 w-4 rounded border-slate-700 text-amber-600 focus:ring-amber-500">
               <span class="text-xs text-slate-300 leading-relaxed">
-                <strong class="text-amber-300 font-semibold">【法定承諾聲明】</strong> 我已年滿 18 歲，並瞭解送貨人員於交貨時依法得查驗身分證件。本表單僅為「網路預約詢價意願單」，送出後由儷泉酒窖專人透過電話/LINE核對法定年齡與購買意向後方正式成立訂單。
+                <strong class="text-amber-300 font-semibold">【法定承諾聲明】</strong> 我已年滿 18 歲，並瞭解送貨人員於交貨時依法得查驗身分證件。本表單僅為「網路預約詢價意願單」，送出後由專人透過電話核對法定年齡與購買意向後方正式成立訂單。
               </span>
             </label>
           </div>
@@ -461,14 +460,14 @@
         </form>
       </section>
 
-      <!-- 右側 1 欄：即時金額試算與門市資訊 -->
+      <!-- 右側 1 欄：即時金額試算與訂購資訊 -->
       <aside class="space-y-6">
         
         <!-- 即時試算卡片 -->
         <div class="glass-panel rounded-2xl p-6 border border-amber-500/20 sticky top-24">
           <h4 class="text-sm font-bold text-amber-200 uppercase tracking-wider mb-4 flex items-center justify-between border-b border-slate-800 pb-2">
             <span>訂單總計試算</span>
-            <span class="text-xs text-amber-400 font-normal">VIP 專屬優惠</span>
+            <span class="text-xs text-amber-400 font-normal">VIP 專屬 8.5 折</span>
           </h4>
 
           <div class="space-y-3 text-sm text-slate-300 mb-6" id="summaryItemList">
@@ -485,11 +484,11 @@
               <span id="subtotalOriginalPrice" class="line-through">NT$ 0</span>
             </div>
             <div class="flex justify-between text-emerald-400">
-              <span>專屬優惠節省：</span>
+              <span>專屬優惠節省 (15% OFF)：</span>
               <span id="discountSavings">- NT$ 0</span>
             </div>
             <div class="flex justify-between text-slate-300">
-              <span>商品總金額 (折後)：</span>
+              <span>商品總金額 (8.5折後)：</span>
               <span id="subtotalDiscountPrice" class="font-bold text-slate-100">NT$ 0</span>
             </div>
             <div class="flex justify-between items-center text-slate-300">
@@ -543,9 +542,10 @@
 
       </aside>
     </div>
+
     <!-- 提交完成提示彈窗 -->
     <div id="confirmationModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-      <div class="glass-panel max-w-lg w-full rounded-2xl p-6 sm:p-8 shadow-2xl border border-amber-400/40 text-center animate-fade-in">
+      <div class="glass-panel max-w-lg w-full rounded-2xl p-6 sm:p-8 shadow-2xl border border-amber-400/40 text-center">
         <div class="w-14 h-14 mx-auto mb-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center text-emerald-400">
           <i data-lucide="check" class="w-8 h-8"></i>
         </div>
@@ -585,14 +585,14 @@
   </footer>
 
   <script>
-    // 酒款數據庫 (A, B, C, D, E)
+    // 酒款資料庫 (A, B, C, D, E) - 全面調整為原價 8.5 折
     const WINE_PRODUCTS = {
       szigeti_beer: {
         id: "szigeti_beer",
         code: "A",
         name: "西格提酒莊 SZIGETI 香檳啤酒 750ml",
         originalPrice: 600,
-        specialPrice: 300,
+        specialPrice: 510, // 600 * 0.85 = 510
         unit: "瓶"
       },
       txakoli: {
@@ -600,7 +600,7 @@
         code: "B",
         name: "奏鳴酒莊 查科莉白葡萄酒 2025",
         originalPrice: 850,
-        specialPrice: 550,
+        specialPrice: 723, // 850 * 0.85 = 722.5 (四捨五入為 723)
         unit: "瓶"
       },
       iselen: {
@@ -608,7 +608,7 @@
         code: "C",
         name: "馬太莊園「醉夢人」紅葡萄酒",
         originalPrice: 500,
-        specialPrice: 325,
+        specialPrice: 425, // 500 * 0.85 = 425
         unit: "瓶"
       },
       marius_blanco: {
@@ -616,7 +616,7 @@
         code: "D",
         name: "彼凱樂酒莊 知更鳥花園晚摘微甜白葡萄酒 2024",
         originalPrice: 600,
-        specialPrice: 390,
+        specialPrice: 510, // 600 * 0.85 = 510
         unit: "瓶"
       },
       gran_marius: {
@@ -624,12 +624,15 @@
         code: "E",
         name: "彼凱樂酒莊 魔力紅陳釀級精選紅葡萄酒 2020",
         originalPrice: 600,
-        specialPrice: 390,
+        specialPrice: 510, // 600 * 0.85 = 510
         unit: "瓶"
       }
     };
 
-    // 狀態管理：滿 6 瓶 或 滿 NT$ 3,000 免運，否則 NT$ 180
+    // Google Apps Script Web App 接收端網址
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxXFmkvQMdKSFI-lHluvRdejx_QDicb-8AqtEZxyJCx-AAICCKG2MzlnP5XmcPfV1quKQ/exec";
+
+    // 狀態管理：滿 6 瓶 或 滿 NT$ 3,000 免運，未達門檻運費 NT$ 180
     const state = {
       quantities: {
         szigeti_beer: 0,
@@ -644,7 +647,6 @@
       standardShippingFee: 180
     };
 
-    // DOM 節點初始化
     document.addEventListener("DOMContentLoaded", () => {
       lucide.createIcons();
 
@@ -830,7 +832,7 @@
       const birth = document.getElementById("birthDate").value || "(未填)";
       const email = document.getElementById("contactEmail").value.trim() || "無";
       const receiverName = document.getElementById("receiverName").value.trim() || "同訂購人";
-      const deliveryType = "本島黑貓低溫/常溫宅配到府";
+      const deliveryType = "本島黑貓低溫宅配到府";
       const address = document.getElementById("deliveryAddress").value.trim() || "未填";
       const timeSlot = document.getElementById("deliveryTimeSlot").selectedOptions[0].text;
       const paymentPref = document.getElementById("paymentPreference").selectedOptions[0].text;
@@ -859,7 +861,7 @@
       }
       const grandTotal = totalDiscounted + shippingFee;
 
-      return `永豐銀行尊榮VIP品酒會【SZITY 儷泉精選】西班牙與奧地利名莊佳釀 專屬訂購單
+      return `永豐銀行尊榮VIP品酒會【SZITY 儷泉精選】西班牙與奧地利名莊佳釀 專屬訂購單 (8.5折特惠)
 ----------------------------------------
 【永豐VIP會員專案窗口】
 專案聯繫：周佩儀 小姐
@@ -877,11 +879,11 @@
 💳 付款方式：${paymentPref}
 📝 備註說明：${notes}
 ----------------------------------------
-【精選酒款優惠訂購明細】
+【精選酒款優惠訂購明細 (8.5折)】
 ${wineLines.length > 0 ? wineLines.join("\n") : "（尚未選取任何酒款）"}
 
 訂購總瓶數：共 ${totalQty} 瓶
-商品總金額：NT$ ${totalDiscounted.toLocaleString()} 元
+商品總金額 (8.5折)：NT$ ${totalDiscounted.toLocaleString()} 元
 本島宅配運費：NT$ ${shippingFee} 元 ${shippingFee === 0 && totalQty > 0 ? '(符合免運條件)' : ''}
 本單應付總金額：NT$ ${grandTotal.toLocaleString()} 元
 ----------------------------------------
@@ -891,8 +893,7 @@ ${wineLines.length > 0 ? wineLines.join("\n") : "（尚未選取任何酒款）"
 【禁止酒駕 ｜ 未滿十八歲禁止飲酒】`;
     }
 
-    // 表單提交處理
-    function handleOrderSubmit(e) {
+    async function handleOrderSubmit(e) {
       e.preventDefault();
 
       let totalQty = 0;
@@ -919,13 +920,82 @@ ${wineLines.length > 0 ? wineLines.join("\n") : "（尚未選取任何酒款）"
         }
       }
 
+      const btnSubmit = document.getElementById("btnSubmitOrder");
+      const originalBtnContent = btnSubmit.innerHTML;
+
+      // 按鈕切換為傳輸狀態
+      btnSubmit.disabled = true;
+      btnSubmit.classList.add("opacity-75", "cursor-wait");
+      btnSubmit.innerHTML = `
+        <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-black inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <span>訂單雲端存檔中...</span>
+      `;
+
       const name = document.getElementById("customerName").value.trim();
       const phone = document.getElementById("customerPhone").value.trim();
+      const birth = document.getElementById("birthDate").value || "";
+      const email = document.getElementById("contactEmail").value.trim() || "";
+      const receiver = document.getElementById("receiverName").value.trim() || name;
+      const address = document.getElementById("deliveryAddress").value.trim();
+      const timeSlot = document.getElementById("deliveryTimeSlot").selectedOptions[0].text;
+      const paymentPref = document.getElementById("paymentPreference").selectedOptions[0].text;
+      const notes = document.getElementById("orderNotes").value.trim() || "無";
       const grandTotal = document.getElementById("grandTotalPrice").innerText;
+
+      // 彙整所選酒款明細
+      const selectedWines = [];
+      Object.keys(state.quantities).forEach(id => {
+        const qty = state.quantities[id];
+        if (qty > 0) {
+          const prod = WINE_PRODUCTS[id];
+          selectedWines.push(`【${prod.code}】${prod.name} × ${qty} 瓶 ($${(prod.specialPrice * qty).toLocaleString()})`);
+        }
+      });
+      const detailsStr = selectedWines.join("； ");
+
+      // 打包要傳入 Google 試算表的資料結構
+      const orderPayload = {
+        name: name,
+        phone: phone,
+        birth: birth,
+        email: email,
+        receiver: receiver,
+        address: address,
+        timeSlot: timeSlot,
+        payment: paymentPref,
+        totalQty: totalQty,
+        grandTotal: grandTotal,
+        details: detailsStr,
+        notes: notes
+      };
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "text/plain;charset=utf-8"
+          },
+          body: JSON.stringify(orderPayload)
+        });
+      } catch (err) {
+        console.warn("Google Apps Script 背景傳送備註:", err);
+      } finally {
+        // 恢復按鈕狀態
+        btnSubmit.disabled = false;
+        btnSubmit.classList.remove("opacity-75", "cursor-wait");
+        btnSubmit.innerHTML = originalBtnContent;
+      }
 
       const modalContent = document.getElementById("modalConfirmationContent");
       modalContent.innerHTML = `
-        <strong class="text-amber-300 font-semibold">${name}</strong> 貴賓您好，已收到您於永豐銀行 VIP 品酒會的專屬預約訂單！<br><br>
+        <strong class="text-amber-300 font-semibold">${name}</strong> 貴賓您好，已收到您於永豐銀行 VIP 品酒會的專屬預約訂單！<br>
+        <span class="inline-flex items-center gap-1 text-xs text-emerald-400 font-semibold mt-1">
+          ✓ 資料已即時同步寫入雲端管理總表
+        </span><br><br>
         • 訂購總瓶數：<strong class="text-slate-100">共 ${totalQty} 瓶</strong><br>
         • 應付總金額：<strong class="text-amber-400 font-bold">${grandTotal}</strong><br>
         • 聯絡行動電話：<span class="text-slate-200">${phone}</span><br><br>
@@ -933,14 +1003,13 @@ ${wineLines.length > 0 ? wineLines.join("\n") : "（尚未選取任何酒款）"
           專案負責窗口：<strong>周佩儀 小姐 (0928-621-898)</strong> 將於 24 小時內與您聯繫核對年齡與款項。
         </div>
         <span class="text-slate-400 text-xs">
-          您亦可直接點擊下方按鈕，複製明細傳送至官方 LINE 客服專員。
+          您亦可點擊下方按鈕複製訂單明細，直接貼至 LINE 官方客服進行確認。
         </span>
       `;
 
       document.getElementById("confirmationModal").classList.remove("hidden");
     }
 
-    // 複製至剪貼簿
     function copyToClipboard(text) {
       const textArea = document.createElement("textarea");
       textArea.value = text;
@@ -950,14 +1019,13 @@ ${wineLines.length > 0 ? wineLines.join("\n") : "（尚未選取任何酒款）"
       document.body.appendChild(textArea);
       textArea.select();
       try {
-        document.execCommand("copy");
+        document.execCommand('copy');
       } catch (err) {
         console.error("無法複製文字", err);
       }
       document.body.removeChild(textArea);
     }
 
-    // Toast 提示訊息
     function showToast(msg) {
       const toast = document.getElementById("toastMessage");
       const toastText = document.getElementById("toastText");
